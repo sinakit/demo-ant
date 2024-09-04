@@ -59,7 +59,7 @@ export default [
     routes: [
       {
         path: '/prescription/create',
-        name : 'create',
+        name: 'create',
         component: './Prescription/Create',
       },
       {
