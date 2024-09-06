@@ -1,16 +1,30 @@
 import { DiffOutlined, MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
 import { PageContainer } from '@ant-design/pro-components';
 import { Button, Card, Col, Divider, Form, Input, InputNumber, Row, Select, Space } from 'antd';
-import React from 'react';
+import React, { useState } from 'react';
+import ViewPrescription from './components/ViewPresription';
 
 const { Option } = Select;
 
 const Create: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   /**
    * @en-US International configuration
    * @zh-CN 国际化配置
    * */
   // const intl = useIntl();
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <PageContainer title=" ">
@@ -187,6 +201,15 @@ const Create: React.FC = () => {
             )}
           </Form.List>
         </Form>
+        <br />
+        <Button onClick={showModal} type="primary">
+          View
+        </Button>
+        <ViewPrescription
+          isModalOpen={isModalOpen}
+          handleOk={handleOk}
+          handleCancel={handleCancel}
+        />
       </Card>
     </PageContainer>
   );
