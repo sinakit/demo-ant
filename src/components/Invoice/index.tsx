@@ -25,7 +25,7 @@ const Invoice = () => {
         }}
       >
         <PrinterOutlined />
-        Print
+        ព្រីន
       </Button>
       <div ref={contentToPrint} className="container">
         <div className="header">
