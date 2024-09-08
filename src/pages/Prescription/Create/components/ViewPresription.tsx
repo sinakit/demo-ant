@@ -1,5 +1,5 @@
-import { PrinterOutlined } from '@ant-design/icons';
-import { Button, message, Modal } from 'antd';
+import Invoice from '@/components/Invoice';
+import { Modal } from 'antd';
 
 export interface IProps {
   isModalOpen: boolean;
@@ -9,9 +9,6 @@ export interface IProps {
 
 const ViewPrescription = (props: IProps) => {
   const { handleCancel, handleOk, isModalOpen } = props;
-  const onPrint = () => {
-    message.success('Printed', 5);
-  };
   return (
     <Modal
       width={'65%'}
@@ -33,17 +30,7 @@ const ViewPrescription = (props: IProps) => {
       cancelButtonProps={{ style: { display: 'none' } }}
       okText="បិទ"
     >
-      <Button
-        onClick={onPrint}
-        type="primary"
-        style={{
-          marginTop: '5px',
-        }}
-      >
-        <PrinterOutlined />
-        Print
-      </Button>
-      <div>handle html</div>
+      <Invoice />
     </Modal>
   );
 };

@@ -1,0 +1,74 @@
+.container {
+  width: 95%;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.header {
+  text-align: center;
+  /* height: auto; */
+  overflow: hidden;
+  font-family: "Khmer OS Muol";
+}
+
+.logo {
+  width: 30%;
+  /* background-color: aqua; */
+  float: left;
+  /* position: relative; */
+  /* height: 300px; */
+}
+
+.title {
+  /* background-color: bisque; */
+  float: right;
+  width: 70%;
+  /* height: 300px; */
+  font-size: 12px;
+  text-align: center;
+}
+
+.logo img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  top: 24px;
+}
+
+.logo h2 {
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.title h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 45px;
+}
+
+.title__left {
+  width: 70%;
+}
+
+.content h2 {
+  text-align: center;
+  font-family: "Khmer OS Muol";
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.footer {
+  font-family: "Khmer OS Battambang";
+}
+
+.footer .footer-doctor-name p {
+  text-align: right;
+  position: relative;
+  right: 20px;
+}
+
+.footer-doctor-signature {
+  width: 25%;
+  font-size: 10px;
+}
